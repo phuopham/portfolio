@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://phuopham.github.io/portfolio",
+  "homepage": "https://portfolio.phuopham.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

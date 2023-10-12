@@ -16,7 +16,7 @@ const Contact = () => {
                 <p className='flex justify-center gap-6 mt-4 items-center'>
                     <a className='hover:scale-125' href="https://github.com/phuopham"><BsGithub className="w-8 h-8" /></a>
                     <a className='hover:scale-125' href="https://www.linkedin.com/in/phuong89/"><BsLinkedin className="w-8 h-8" /></a>
-                    <a className='hover:scale-125 text-bold bg-gray-50 rounded-full px-2 py-1 font-semibold text-purple-950' href="https://phuopham.github.io/resume/">My resume</a>
+                    <a className='hover:scale-125 text-bold bg-gray-50 rounded-full px-2 py-1 font-semibold text-purple-950' href="https://resume.phuopham.com">My resume</a>
                 </p>
             </div>
         </motion.section>

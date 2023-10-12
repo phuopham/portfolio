@@ -5,7 +5,7 @@ This is the easy way to create a blazing fast static page with react and tailwin
 ### Example: 
 This is my resume implement this approach:
 
-[https://phuopham.github.io/resume/](https://phuopham.github.io/resume/)
+[https://resume.phuopham.com](https://resume.phuopham.com)
 
 This is the source code:
 [https://github.com/phuopham/resume/](https://github.com/phuopham/resume/)

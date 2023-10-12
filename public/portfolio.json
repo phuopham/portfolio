@@ -33,6 +33,23 @@
     ],
     "projects": [
         {
+            "title": "Media converter",
+            "description": "A secure, reliable tool to convert your data without uploading to any server or install any software.",
+            "tags": [
+                "React",
+                "FFmpeg wasm",
+                "Tailwind",
+                "Radix-UI",
+                "Vite"
+            ],
+            "link": "https://converter.phuopham.com/",
+            "repo": "https://github.com/phuopham/react-vite-files-converter",
+            "images": [
+                "./pictures/media-converter1.jpg",
+                "./pictures/media-converter1.jpg"
+            ]
+        },
+        {
             "title": "viepos.com",
             "description": "I maintain this custom POS system for 30+ admins and hundreds of customers. I'm responsible for update landing page, implement new functionalities...",
             "tags": [
@@ -86,7 +103,7 @@
                 "JavaFX",
                 "MySql"
             ],
-            "repo": "https://github.com/ngtrongduc106/vieSpa",
+            "repo": "https://github.com/phuopham/viespa-javaFX",
             "images": [
                 "./pictures/viespa.jpg",
                 "./pictures/viespa2.jpg"
@@ -101,7 +118,7 @@
                 "Github Page",
                 "JSON"
             ],
-            "link": "https://phuopham.github.io/resume/",
+            "link": "https://resume.phuopham.com",
             "repo": "https://github.com/phuopham/resume",
             "images": [
                 "./pictures/resume1.jpg",
