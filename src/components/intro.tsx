@@ -39,9 +39,8 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi there</span>, I'm <span className="font-bold text-purple-500">Phuong Pham</span> from <span className="font-bold"> Vietnam</span>. I'm an{" "}
-        <span className="font-bold"> IT engineer</span> and a <span className="font-bold"> full-stack developer</span> with{" "}
-        <span className="font-bold">10 year</span> of experience in IT field. My focus is{" "}
+        <span className="font-bold">Hi there</span>, I'm <span className="font-bold text-purple-500">Phuong Pham</span>, a <span className="font-bold"> full-stack developer</span> and <span className="font-bold"> IT engineer</span> from <span className="font-bold"> Vietnam</span>. I have a {" "}
+        <span className="font-bold">decade</span> of experience in IT field, specializing in{" "}
         <span className="underline">React (Next.js), PHP (Laravel)</span>.
       </motion.h1>
 
