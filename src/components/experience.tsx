@@ -19,7 +19,7 @@ export default function Experience({ experiences }: { experiences: Array<Experie
       transition={{ delay: 0.175 }}
       id="experience"
     >
-      <h2 className="text-3xl font-medium text-purple-700 mb-8 text-center">My experience</h2>
+      <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700 dark:mix-blend-difference bg-slate-100/10 mb-8 text-center">My experience</h2>
       <ol className="border-l-2 border-opacity-70 border-neutral-300 dark:border-neutral-500">
         {experiences?.map((it, key) => (
           <li key={key}>

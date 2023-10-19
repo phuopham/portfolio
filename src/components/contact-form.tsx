@@ -62,7 +62,7 @@ export default function Contact() {
                 once: true,
             }}
         >
-            <h2 className="text-3xl font-medium text-purple-700 mb-16 text-center">Contact me</h2>
+            <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700 dark:mix-blend-difference bg-slate-100/10 mb-8 text-center">Contact me</h2>
 
             <p className="text-gray-700 -mt-6 dark:text-white/80">
                 Please contact me directly at{" "}
@@ -101,7 +101,7 @@ export default function Contact() {
                     placeholder="Your message"
                     maxLength={2000}
                 />
-                <button className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-purple-800 opacity-90 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-purple-700 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 absolute bottom-3 -lg-end-36 end-5" type="submit">Submit <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" /></button>
+                <button className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-purple-800 opacity-90 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-purple-700 active:scale-105 disabled:scale-100 disabled:bg-opacity-65 absolute bottom-3 lg:-end-36 end-5" type="submit">Submit <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" /></button>
             </form>
         </motion.section>
     );
