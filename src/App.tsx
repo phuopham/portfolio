@@ -7,7 +7,7 @@ import Skills from "./components/skills"
 import Experience, { ExperiencesProps } from "./components/experience"
 import ActiveSectionContextProvider from "./context/active-section-context"
 import Header from "./components/header"
-import Contact from "./components/contact"
+import Contact from "./components/contact-form"
 import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
 
@@ -37,8 +37,8 @@ function App() {
         <Projects projectsData={data?.projects} />
         <Skills />
         <Experience experiences={data?.experiences} />
+        <Contact />
       </main>
-      <Contact />
       <Footer />
       <Toaster position="top-right" />
     </ActiveSectionContextProvider>

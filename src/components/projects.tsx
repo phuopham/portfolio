@@ -17,7 +17,7 @@ export default function Projects({ projectsData }: { projectsData: Array<Project
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mt-28">
-      <h2 className="text-3xl font-medium mb-8 text-center">My projects</h2>
+      <h2 className="text-3xl font-medium text-purple-700 mb-8 text-center">My projects</h2>
       <div>
         {projectsData?.map((project, index) => (
           <React.Fragment key={index}>
