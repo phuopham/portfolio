@@ -110,6 +110,24 @@
             ]
         },
         {
+            "title": "My portfolio",
+            "description": "A website to showcase my skills, especially in front-end",
+            "tags": [
+                "React",
+                "Radix UI",
+                "Framer motion",
+                "Github Page",
+                "Pipedream",
+                "JSON"
+            ],
+            "link": "https://resume.phuopham.com",
+            "repo": "https://github.com/phuopham/resume",
+            "images": [
+                "./pictures/portfolio1.jpg",
+                "./pictures/portfolio2.jpg"
+            ]
+        },
+        {
             "title": "My resume",
             "description": "I would like to update and share my resume as fast as possible.",
             "tags": [
