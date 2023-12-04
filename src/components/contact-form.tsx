@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
 
-export default function Contact() {
+export const Contact = () => {
     const { ref } = useSectionInView("Contact");
     const [data, setData] = useState({ Name: '', Email: '', Message: '' })
 
@@ -62,7 +62,7 @@ export default function Contact() {
                 once: true,
             }}
         >
-            <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700 dark:mix-blend-difference bg-slate-100/10 mb-8 text-center">Contact me</h2>
+            <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700   bg-slate-100/10 mb-8 text-center">Contact me</h2>
 
             <p className="text-gray-700 -mt-6 dark:text-white/80">
                 Please contact me directly at{" "}
@@ -106,3 +106,5 @@ export default function Contact() {
         </motion.section>
     );
 }
+
+export default Contact

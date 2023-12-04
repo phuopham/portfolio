@@ -30,7 +30,7 @@ const links = [
 ] as const;
 
 
-export default function Header() {
+export const Header = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
 

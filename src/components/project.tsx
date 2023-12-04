@@ -3,7 +3,7 @@ import { FaEye } from "react-icons/fa6"
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaCode } from "react-icons/fa";
 import { ProjectsDataProps } from "./projects";
-export default function Project({
+export const Project = ({
   title,
   description,
   tags,
@@ -11,7 +11,7 @@ export default function Project({
   repo,
   images
 }: ProjectsDataProps
-) {
+) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,

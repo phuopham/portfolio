@@ -5,7 +5,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "../libs/hooks";
 import { useActiveSectionContext } from "../context/active-section-context";
 
-export default function Intro() {
+export const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
