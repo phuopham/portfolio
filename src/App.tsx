@@ -34,12 +34,12 @@ const App = () => {
       <main className='flex flex-col items-center px-4'>
         <Intro />
         <TrustedBy baseVelocity={8} >
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="public\logo\Qualcomm-Logo.svg" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="public\logo\Siemens-logo.svg" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="public\logo\Tek-experts.svg" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="public\logo\viepos.png" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44' src="public\logo\Web888.png" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="public\logo\BTSserv.png" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Qualcomm-Logo.svg" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Siemens-logo.svg" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Tek-experts.svg" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="./logo/viepos.png" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44' src="./logo/Web888.png" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="./logo/BTSserv.png" alt="" />
         </TrustedBy>
 
         <About />
