@@ -34,7 +34,7 @@ export const TrustedBy = ({ children, baseVelocity = 100 }: { children: ReactNod
     return (
         <section className="text-center">
             <SectionTitle>Trusted by</SectionTitle>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden w-[95vw]">
                 <motion.div className=" flex gap-10 items-center" style={{ x }}>
                     {children}
                     {children}
