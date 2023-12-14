@@ -38,7 +38,7 @@ const App = () => {
           <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Siemens-logo.svg" alt="" />
           <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Tek-experts.svg" alt="" />
           <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="./logo/viepos.png" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44' src="./logo/Web888.png" alt="" />
+          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44' src="./logo/web888.png" alt="" />
           <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="./logo/BTSserv.png" alt="" />
         </TrustedBy>
 
