@@ -3,6 +3,7 @@ import { useSectionInView } from "../libs/hooks";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import { SectionTitle } from "./ui/sectionTitle";
 
 export const Contact = () => {
     const { ref } = useSectionInView("Contact");
@@ -62,7 +63,7 @@ export const Contact = () => {
                 once: true,
             }}
         >
-            <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700   bg-slate-100/10 mb-8 text-center">Contact me</h2>
+            <SectionTitle>Contact me</SectionTitle>
 
             <p className="text-gray-700 -mt-6 dark:text-white/80">
                 Please contact me directly at{" "}

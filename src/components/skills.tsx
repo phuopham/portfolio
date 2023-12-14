@@ -1,5 +1,6 @@
 import { useSectionInView } from "../libs/hooks";
 import { motion } from "framer-motion";
+import { SectionTitle } from "./ui/sectionTitle";
 
 const skillsData = [
   "HTML", "CSS", "Bootstrap4,5", "TailwindCSS", "Javascript", "Typescript", "React", "Next.JS", "Node.JS", "Prisma", "Redux", "Express.JS", "MySQL", "PHP", "Laravel7,8,10", "Java"
@@ -28,7 +29,7 @@ export const Skills = () => {
       ref={ref}
       className="mt-28 max-w-[53rem] scroll-mt-28 text-center"
     >
-      <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700   bg-slate-100/10 mb-8 text-center">My skills</h2>
+      <SectionTitle>My skills</SectionTitle>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li

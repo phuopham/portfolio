@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useSectionInView } from '../libs/hooks';
+import { SectionTitle } from './ui/sectionTitle';
 
 export type ExperiencesProps = {
   from?: string,
@@ -13,13 +14,13 @@ export const Experience = ({ experiences }: { experiences: Array<ExperiencesProp
   return (
     <motion.section
       ref={ref}
-      className="max-w-[45rem] text-center leading-8 mt-28 scroll-mt-28"
+      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.75 }}
       id="experience"
     >
-      <h2 className="m-auto py-3 px-12 rounded-full inline-block text-3xl font-medium text-purple-700   bg-slate-100/10 mb-8 text-center">My experience</h2>
+      <SectionTitle>My experience</SectionTitle>
       <ol className="border-l-2 border-opacity-70 border-slate-300/75 dark:border-slate-500/75">
         {experiences?.map((it, key) => (
           <li key={key}>
