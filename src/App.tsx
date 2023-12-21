@@ -11,6 +11,8 @@ import Contact from "./components/contact-form"
 import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
 import { TrustedBy } from './components/trustedBy'
+import { Testimonial } from './components/testimonials'
+import { TrustedBy2 } from './components/trustedBy2'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
 
@@ -32,16 +34,9 @@ const App = () => {
     <ActiveSectionContextProvider>
       <Header />
       <main className='flex flex-col items-center px-4'>
+        <Testimonial />
         <Intro />
-        <TrustedBy baseVelocity={8} >
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Qualcomm-Logo.svg" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Siemens-logo.svg" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ' src="./logo/Tek-experts.svg" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="./logo/viepos.png" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 w-44' src="./logo/web888.png" alt="" />
-          <img className='dark:p-2 rounded-lg dark:bg-slate-50/75 ' src="./logo/BTSserv.png" alt="" />
-        </TrustedBy>
-
+        <TrustedBy2 />
         <About />
         {data && <Projects projectsData={data.projects} />}
         <Skills />
