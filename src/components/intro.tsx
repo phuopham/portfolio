@@ -13,7 +13,7 @@ export const Intro = () => {
     <section
       ref={ref}
       id="home"
-      className="max-w-[50rem] text-center scroll-mt-[100rem]"
+      className="max-w-[50rem] text-center scroll-mt-[100rem] mt-16"
     >
       <div className="flex items-center justify-center">
         <motion.div
@@ -41,7 +41,8 @@ export const Intro = () => {
       >
         <span className="font-bold">Hi there</span>, I'm <span className="font-bold text-purple-500">Phuong Pham</span>, a <span className="font-bold"> full-stack developer</span> and <span className="font-bold"> IT engineer</span> from <span className="font-bold"> Vietnam</span>. I have a {" "}
         <span className="font-bold">decade</span> of experience in IT field, specializing in{" "}
-        <span className="underline">React (Next.js), PHP (Laravel)</span>.
+        <span className="underline">React (Next.js), PHP (Laravel)
+        </span>.
       </motion.h1>
 
       <motion.div
