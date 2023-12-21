@@ -45,7 +45,7 @@ export const TrustedBy2 = () => {
             <SectionTitle >
                 Trusted by
             </SectionTitle>
-            <div className="h-36 w-[57rem]" >
+            <div className="h-36 w-[100vw] lg:w-[57rem]" >
                 {sliderData.map((image, index) => (
                     <motion.img
                         animate={positions[positionIndexes[index]]}
