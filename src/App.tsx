@@ -10,8 +10,6 @@ import { Header } from "./components/header"
 import Contact from "./components/contact-form"
 import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
-import { TrustedBy } from './components/trustedBy'
-import { Testimonial } from './components/testimonials'
 import { TrustedBy2 } from './components/trustedBy2'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
@@ -34,7 +32,6 @@ const App = () => {
     <ActiveSectionContextProvider>
       <Header />
       <main className='flex flex-col items-center px-4'>
-        <Testimonial />
         <Intro />
         <TrustedBy2 />
         <About />
