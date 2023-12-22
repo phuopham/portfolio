@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { motion } from 'framer-motion'
 import { SectionTitle } from "./ui/sectionTitle";
 
@@ -45,7 +45,7 @@ export const TrustedBy2 = () => {
                 Trusted by
             </SectionTitle>
             <div className="md:h-20 w-[100vw] lg:w-[57rem] overflow-x-hidden" >
-                <div className="flex flex-col items-center gap-3 md:block">
+                <div className="flex flex-wrap justify-center items-center gap-3 md:block">
                     {window.innerWidth > 768 ?
                         sliderData.map((image, index) => (
                             <motion.img
