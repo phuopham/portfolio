@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from 'framer-motion'
 import { SectionTitle } from "./ui/sectionTitle";
 
 export const TrustedBy2 = () => {
-
     const positions = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5"];
     const propertyVariants = {
         pos0: { x: "-16em", zIndex: -2, opacity: '0', width: 0 },
@@ -42,24 +41,28 @@ export const TrustedBy2 = () => {
     }, []);
     return (
         <>
-            <SectionTitle className='hidden sm:block' >
+            <SectionTitle>
                 Trusted by
             </SectionTitle>
-            <div className="h-20 hidden sm:block sm:w-[100vw] lg:w-[57rem] overflow-x-hidden" >
-                <div>
-                    {sliderData.map((image, index) => (
-                        <motion.img
-                            animate={positions[positionIndexes[index]]}
-                            initial={{ x: "0" }}
-                            variants={propertyVariants}
-                            transition={{ duration: 2 }}
-                            className={image.style}
-                            style={{ position: 'absolute' }}
-                            key={index}
-                            src={image.img}
-                        />
+            <div className="md:h-20 w-[100vw] lg:w-[57rem] overflow-x-hidden" >
+                <div className="flex flex-col items-center gap-3 md:block">
+                    {window.innerWidth > 768 ?
+                        sliderData.map((image, index) => (
+                            <motion.img
+                                animate={positions[positionIndexes[index]]}
+                                initial={{ x: "0" }}
+                                variants={propertyVariants}
+                                transition={{ duration: 2 }}
+                                className={image.style}
+                                style={{ position: 'absolute' }}
+                                key={index}
+                                src={image.img}
+                            />
 
-                    ))}
+                        ))
+                        : sliderData.map((image, index) => (
+                            <img src={image.img} className={image.style} key={index} />
+                        ))}
                 </div>
             </div>
         </>
