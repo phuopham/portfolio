@@ -6,12 +6,12 @@ export const TrustedBy2 = () => {
 
     const positions = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5"];
     const propertyVariants = {
-        pos0: { x: "-16em", zIndex: -2, opacity: '0' },
+        pos0: { x: "-16em", zIndex: -2, opacity: '0', width: 0 },
         pos1: { x: "0" },
         pos2: { x: "16em", },
         pos3: { x: "32em", },
         pos4: { x: "48em", },
-        pos5: { x: "64em", opacity: '0' },
+        pos5: { x: "64em", opacity: '0', width: 0 },
     };
     const sliderData = [
         { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Qualcomm-Logo.svg" },
@@ -42,10 +42,10 @@ export const TrustedBy2 = () => {
     }, []);
     return (
         <>
-            <SectionTitle >
+            <SectionTitle className='hidden sm:block' >
                 Trusted by
             </SectionTitle>
-            <div className="h-36 w-[100dvw] lg:w-[57rem] overflow-x-hidden" >
+            <div className="h-20 hidden sm:block sm:w-[100vw] lg:w-[57rem] overflow-x-hidden" >
                 <div>
                     {sliderData.map((image, index) => (
                         <motion.img
