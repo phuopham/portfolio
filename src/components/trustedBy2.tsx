@@ -45,20 +45,22 @@ export const TrustedBy2 = () => {
             <SectionTitle >
                 Trusted by
             </SectionTitle>
-            <div className="h-36 w-[100vw] lg:w-[57rem]" >
-                {sliderData.map((image, index) => (
-                    <motion.img
-                        animate={positions[positionIndexes[index]]}
-                        initial={{ x: "0" }}
-                        variants={propertyVariants}
-                        transition={{ duration: 2 }}
-                        className={image.style}
-                        style={{ position: 'absolute' }}
-                        key={index}
-                        src={image.img}
-                    />
+            <div className="h-36 w-[100dvw] lg:w-[57rem] overflow-x-hidden" >
+                <div>
+                    {sliderData.map((image, index) => (
+                        <motion.img
+                            animate={positions[positionIndexes[index]]}
+                            initial={{ x: "0" }}
+                            variants={propertyVariants}
+                            transition={{ duration: 2 }}
+                            className={image.style}
+                            style={{ position: 'absolute' }}
+                            key={index}
+                            src={image.img}
+                        />
 
-                ))}
+                    ))}
+                </div>
             </div>
         </>
     );
