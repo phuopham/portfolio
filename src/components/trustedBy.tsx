@@ -1,50 +1,70 @@
-import { useAnimationFrame, useMotionValue, useScroll, useSpring, useTransform, useVelocity, wrap, motion } from "framer-motion";
-import { ReactNode, useRef } from "react";
+import { useState, useEffect } from "react";
+import { motion } from 'framer-motion'
 import { SectionTitle } from "./ui/sectionTitle";
 
-export const TrustedBy = ({ children, baseVelocity = 100 }: { children: ReactNode, baseVelocity: number }) => {
-    const baseX = useMotionValue(0);
-    const { scrollY } = useScroll();
-    const scrollVelocity = useVelocity(scrollY);
-    const smoothVelocity = useSpring(scrollVelocity, {
-        damping: 50,
-        stiffness: 400
-    });
-    const velocityFactor = useTransform(smoothVelocity, [0, 1000], [0, 5], {
-        clamp: false
-    });
+export const TrustedBy = () => {
+    const positions = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5"];
+    const propertyVariants = {
+        pos0: { x: "-16em", zIndex: -2, opacity: '0', width: 0 },
+        pos1: { x: "0" },
+        pos2: { x: "16em", },
+        pos3: { x: "32em", },
+        pos4: { x: "48em", },
+        pos5: { x: "64em", opacity: '0', width: 0 },
+    };
+    const sliderData = [
+        { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Qualcomm-Logo.svg" },
+        { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Siemens-logo.svg" },
+        { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Tek-experts.svg" },
+        { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 ', img: "./logo/viepos.png" },
+        { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44', img: "./logo/web888.png" },
+        { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 ', img: "./logo/BTSserv.png" },
+    ];
 
-    // Magic number
-    const x = useTransform(baseX, (v) => `${wrap(-255, 0, v)}%`);
+    const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5]);
 
-    const directionFactor = useRef<number>(1);
-    useAnimationFrame((_, delta) => {
-        let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+    const nextProperty = () => {
+        setPositionIndexes((prevIndexes) => {
+            const updatedIndexes = prevIndexes.map(
+                (prevIndex) => (prevIndex + 1) % 6
+            );
+            return updatedIndexes;
+        });
+    };
 
-        if (velocityFactor.get() < 0) {
-            directionFactor.current = -1;
-        } else if (velocityFactor.get() > 0) {
-            directionFactor.current = 1;
-        }
-
-        moveBy += directionFactor.current * moveBy * velocityFactor.get();
-
-        baseX.set(baseX.get() + moveBy);
-    });
+    useEffect(() => {
+        const myFunction = () => { nextProperty(); };
+        const intervalId = setInterval(myFunction, 4000);
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, []);
     return (
-        <section className="text-center">
-            <SectionTitle>Trusted by</SectionTitle>
-            <div className="overflow-hidden w-[95vw]">
-                <motion.div className=" flex gap-10 items-center" style={{ x }}>
-                    {children}
-                    {children}
-                    {children}
-                    {children}
-                    {children}
-                    {children}
-                </motion.div>
-            </div>
+        <>
+            <SectionTitle>
+                Trusted by
+            </SectionTitle>
+            <div className="md:h-20 w-[100vw] lg:w-[57rem] overflow-x-hidden" >
+                <div className="flex p-4 flex-wrap justify-center items-center gap-3 md:block">
+                    {window.innerWidth > 768 ?
+                        sliderData.map((image, index) => (
+                            <motion.img
+                                animate={positions[positionIndexes[index]]}
+                                initial={{ x: "0" }}
+                                variants={propertyVariants}
+                                transition={{ duration: 2 }}
+                                className={image.style}
+                                style={{ position: 'absolute' }}
+                                key={index}
+                                src={image.img}
+                            />
 
-        </section>
+                        ))
+                        : sliderData.map((image, index) => (
+                            <img src={image.img} className={image.style} key={index} />
+                        ))}
+                </div>
+            </div>
+        </>
     );
-}
+};

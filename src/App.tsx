@@ -10,7 +10,9 @@ import { Header } from "./components/header"
 import Contact from "./components/contact-form"
 import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
-import { TrustedBy2 } from './components/trustedBy2'
+import { TrustedBy } from './components/trustedBy'
+import { Testimonial } from './components/testimonials'
+import { Badges } from './components/badges'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
 
@@ -33,8 +35,14 @@ const App = () => {
       <Header />
       <main className='flex flex-col items-center px-4'>
         <Intro />
-        <TrustedBy2 />
+        <TrustedBy />
         <About />
+        <Badges baseVelocity={7}>
+          <img src="/badges/CCNA.png" alt="" />
+          <img src="/badges/devops-fundamentals.png" className='h-36' alt="" />
+          <img src="/badges/DISM.png" alt="" />
+          <img src="/badges/Siemens.png" className='h-36' alt="" />
+        </Badges>
         {data && <Projects projectsData={data.projects} />}
         <Skills />
         {data && <Experience experiences={data?.experiences} />}
