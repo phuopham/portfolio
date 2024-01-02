@@ -11,7 +11,6 @@ import Contact from "./components/contact-form"
 import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
 import { TrustedBy } from './components/trustedBy'
-import { Testimonial } from './components/testimonials'
 import { Badges } from './components/badges'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
