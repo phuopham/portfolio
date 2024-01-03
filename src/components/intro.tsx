@@ -24,7 +24,7 @@ export const Intro = () => {
             duration: 0.2,
           }}
         >
-          <img
+          <img loading="lazy"
             src='./pictures/profile.jpg'
             alt="Phuong portrait"
             width="300"

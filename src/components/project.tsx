@@ -54,7 +54,7 @@ export const Project = ({
           </ul>
         </div>
 
-        <img
+        <img loading="lazy"
           src={images[0]}
           alt="Project I worked on"
           className="absolute hidden sm:block top-8 -right-4 w-[20rem] rounded-lg shadow-2xl
@@ -70,7 +70,7 @@ export const Project = ({
 
         group-even:right-[initial] group-even:-left-4"
         />
-        <img
+        <img loading="lazy"
           src={images[1]}
           alt="Project I worked on"
           className="absolute hidden sm:block top-4 -right-[30rem] w-[30rem] rounded-lg shadow-2xl

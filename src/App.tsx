@@ -12,6 +12,7 @@ import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
 import { TrustedBy } from './components/trustedBy'
 import { Badges } from './components/badges'
+import { Testimonial } from './components/testimonials'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
 
@@ -37,14 +38,15 @@ const App = () => {
         <TrustedBy />
         <About />
         <Badges baseVelocity={7}>
-          <img src="/badges/CCNA.png" alt="" />
-          <img src="/badges/devops-fundamentals.png" className='h-36' alt="" />
-          <img src="/badges/DISM.png" alt="" />
-          <img src="/badges/Siemens.png" className='h-36' alt="" />
+          <img loading="lazy" src="/badges/CCNA.png" alt="" />
+          <img loading="lazy" src="/badges/devops-fundamentals.png" className='h-36' alt="" />
+          <img loading="lazy" src="/badges/DISM.png" alt="" />
+          <img loading="lazy" src="/badges/Siemens.png" className='h-36' alt="" />
         </Badges>
         {data && <Projects projectsData={data.projects} />}
         <Skills />
         {data && <Experience experiences={data?.experiences} />}
+        <Testimonial />
         <Contact />
       </main>
       <Footer />
