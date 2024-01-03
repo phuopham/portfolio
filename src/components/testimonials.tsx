@@ -33,7 +33,7 @@ export const Testimonial = () => {
             index: 2,
             logo: './logo/Siemens-logo.svg',
             name: 'Hong Phuong Ng***',
-            title: 'CFO @ Siemens Limited Vietnam',
+            title: 'CITO @ Siemens Limited Vietnam',
             testimonial: 'Congratulations on your 5-year anniversary with Siemens as an IT Operations Professional! Your dedication and hard work have contributed significantly to the success of the team. Your expertise in IT operations has strengthened the functioning of the systems with efficient solutions. Wishing you continued success in the future. 🎉',
         },
         {
