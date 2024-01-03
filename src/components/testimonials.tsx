@@ -9,9 +9,9 @@ export const Testimonial = () => {
     const propertyVariants = {
         pos0: { x: "-55%", y: '2em', zIndex: -2, opacity: '4%' },
         pos1: { x: "-50%", zIndex: 0 },
-        pos2: { x: "0", y: '-2em', zIndex: -2, opacity: 0 },
-        pos3: { x: "-45%", y: '-2em', zIndex: -2, opacity: 0 },
-        pos4: { x: "-45%", y: '-2em', zIndex: -2, opacity: 0 },
+        pos2: { x: "-45%", width: '90%', y: '-2em', zIndex: -2, opacity: 0 },
+        pos3: { x: "-55%", y: '2em', zIndex: -2, opacity: 0 },
+        pos4: { x: "-55%", y: '2em', zIndex: -2, opacity: 0 },
         pos5: { x: "-55%", y: '2em', zIndex: -2, opacity: 0 },
     };
     const sliderData = [
@@ -92,7 +92,7 @@ export const Testimonial = () => {
 
     return (
         <>
-            <SectionTitle className="relative">
+            <SectionTitle className="relative overflow-x-hidden">
                 Feedback
             </SectionTitle>
             <div className="pt-5 h-96 sm:h-44" >
