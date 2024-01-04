@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { SectionTitle } from "./ui/sectionTitle";
 
 export const TrustedBy = () => {
-    const positions = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5"];
+    const positions = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5", "pos6"];
     const propertyVariants = {
         pos0: { x: "-16em", y: '-50%', zIndex: -2, opacity: '0', width: 0 },
         pos1: { x: "0", y: '-50%' },
@@ -11,6 +11,7 @@ export const TrustedBy = () => {
         pos3: { x: "32em", y: '-50%' },
         pos4: { x: "48em", y: '-50%' },
         pos5: { x: "64em", y: '-50%', opacity: '0', width: 0 },
+        pos6: { x: "64em", y: '-50%', opacity: '0', width: 0 },
     };
     const sliderData = [
         { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Qualcomm-Logo.svg" },
@@ -18,15 +19,16 @@ export const TrustedBy = () => {
         { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Tek-experts.svg" },
         { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 ', img: "./logo/viepos.png" },
         { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44', img: "./logo/web888.png" },
-        { style: 'dark:p-2 w-44 rounded-lg dark:bg-slate-50/75 ', img: "./logo/Dextermind.png" },
+        { style: 'dark:p-2 w-40 rounded-lg dark:bg-slate-50/75 ', img: "./logo/Dextermind.png" },
+        { style: 'dark:p-2 w-28 rounded-lg dark:bg-slate-50/75 ', img: "./logo/BTSserv.png" },
     ];
 
-    const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5]);
+    const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5, 6]);
 
     const nextProperty = () => {
         setPositionIndexes((prevIndexes) => {
             const updatedIndexes = prevIndexes.map(
-                (prevIndex) => (prevIndex + 1) % 6
+                (prevIndex) => (prevIndex + 1) % sliderData.length
             );
             return updatedIndexes;
         });

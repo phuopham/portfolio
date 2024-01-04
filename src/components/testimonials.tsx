@@ -9,7 +9,7 @@ export const Testimonial = () => {
     const propertyVariants = {
         pos0: { x: "-55%", y: '2em', zIndex: -2, opacity: '4%' },
         pos1: { x: "-50%", zIndex: 0 },
-        pos2: { x: "-45%", width: '90%', y: '-2em', zIndex: -2, opacity: 0 },
+        pos2: { x: "-45%", width: '90%', y: '-2em', zIndex: -2, opacity: 0, },
         pos3: { x: "-55%", y: '2em', zIndex: -2, opacity: 0 },
         pos4: { x: "-55%", y: '2em', zIndex: -2, opacity: 0 },
         pos5: { x: "-55%", y: '2em', zIndex: -2, opacity: 0 },
@@ -46,7 +46,7 @@ export const Testimonial = () => {
         {
             index: 4,
             logo: './logo/web888.png',
-            name: 'Toan Ngo V***',
+            name: 'Toan Ngo Vi***',
             title: 'Founder @ trienkhaiweb.com - Web888.vn',
             testimonial: 'Congratulations on successfully completing your 3-month remote web development job! Your ability to adapt to remote work and still deliver high-quality results is truly commendable. Your dedication and skills have surely made a significant impact. Keep up the excellent work! 🎉',
         },
@@ -95,7 +95,7 @@ export const Testimonial = () => {
             <SectionTitle className="relative overflow-x-hidden">
                 Feedback
             </SectionTitle>
-            <div className="pt-5 h-96 sm:h-44" >
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="pt-5 h-96 sm:h-44" >
 
                 {sliderData.map((item, key) => (
                     <motion.div
@@ -108,7 +108,7 @@ export const Testimonial = () => {
                         <TestimonialCard data={item} />
                     </motion.div>
                 ))}
-            </div>
+            </motion.div>
             <div className="relative w-full">
                 <div className="absolute z-10 bottom-[21rem] sm:bottom-32 w-full px-4 flex justify-between md:justify-around gap-3">
                     <button className="rounded-full p-4 bg-purple-600/80"
