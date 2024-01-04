@@ -68,8 +68,8 @@ export const TRUSTEDBY_DATA = [
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Qualcomm-Logo.svg" },
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Siemens-logo.svg" },
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Tek-experts.svg" },
-    { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 ', img: "./logo/viepos.png" },
+    { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/viepos.png" },
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44', img: "./logo/web888.png" },
-    { style: 'dark:p-2 w-40 rounded-lg dark:bg-slate-50/75 ', img: "./logo/Dextermind.png" },
-    { style: 'dark:p-2 w-28 rounded-lg dark:bg-slate-50/75 ', img: "./logo/BTSserv.png" },
+    { style: 'dark:p-2 w-44 rounded-lg dark:bg-slate-50/75 ', img: "./logo/Dextermind.png" },
+    { style: 'dark:p-2 w-44 rounded-lg dark:bg-slate-50/75 ', img: "./logo/BTSserv.png" },
 ];
