@@ -12,7 +12,7 @@ import Footer from "./components/footer"
 import { Toaster } from "react-hot-toast"
 import { TrustedBy } from './components/trustedBy'
 import { Badges } from './components/badges'
-import { Testimonial } from './components/testimonials'
+import { Testimonial2 } from './components/testimonial2'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
 
@@ -46,7 +46,7 @@ const App = () => {
         {data && <Projects projectsData={data.projects} />}
         <Skills />
         {data && <Experience experiences={data?.experiences} />}
-        <Testimonial />
+        <Testimonial2 />
         <Contact />
       </main>
       <Footer />
