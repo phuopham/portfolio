@@ -30,14 +30,13 @@ export const Testimonial2 = () => {
             setOnDisplay(TESTIMONIAL_DATA[prevIndex])
         }, 500)
     }
-    useEffect(() => {
-        if (reel) {
-            const intervalId = setInterval(() => nextProperty(), 4000);
-            return () => {
-                clearInterval(intervalId);
-            };
+    if (reel) useEffect(() => {
+        const intervalId = setInterval(() => nextProperty(), 4000);
+        return () => {
+            clearInterval(intervalId);
         }
-    }, [reel]);
+    }, [nextProperty]);
+
     useEffect(() => {
         !isPresent && setTimeout(safeToRemove, 1000)
     }, [isPresent])
