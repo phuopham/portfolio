@@ -24,6 +24,10 @@ const links = [
     hash: "#experience",
   },
   {
+    name: "Feedback",
+    hash: "#feedback"
+  },
+  {
     name: "Contact",
     hash: "#contact"
   }

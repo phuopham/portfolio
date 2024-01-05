@@ -13,6 +13,7 @@ import { Toaster } from "react-hot-toast"
 import { TrustedBy } from './components/trustedBy'
 import { Badges } from './components/badges'
 import { Testimonial2 } from './components/testimonial2'
+import { Testimonial2Header } from './components/testimonial2Header'
 
 type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
 
@@ -46,6 +47,7 @@ const App = () => {
         {data && <Projects projectsData={data.projects} />}
         <Skills />
         {data && <Experience experiences={data?.experiences} />}
+        <Testimonial2Header />
         <Testimonial2 />
         <Contact />
       </main>

@@ -4,9 +4,11 @@ import { motion, AnimatePresence, usePresence } from 'framer-motion'
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 import { TestimonialCard } from "./ui/testimonialCard";
 import { SectionTitle } from "./ui/sectionTitle";
+import { useSectionInView } from "../libs/hooks";
 
 export const Testimonial2 = () => {
     const [reel, setReel] = useState(true)
+    const { ref } = useSectionInView("Feedback", 0.5);
     const [onDisplay, setOnDisplay] = useState<{
         index: number;
         logo: string;
@@ -30,19 +32,25 @@ export const Testimonial2 = () => {
             setOnDisplay(TESTIMONIAL_DATA[prevIndex])
         }, 500)
     }
-    if (reel) useEffect(() => {
-        const intervalId = setInterval(() => nextProperty(), 4000);
-        return () => {
-            clearInterval(intervalId);
+    useEffect(() => {
+        if (reel) {
+            const intervalId = setInterval(() => nextProperty(), 4000);
+            return () => {
+                clearInterval(intervalId);
+            }
         }
-    }, [nextProperty]);
+    }, [reel, nextProperty]);
 
     useEffect(() => {
         !isPresent && setTimeout(safeToRemove, 1000)
     }, [isPresent])
+
+
     return (
         <>
-            <SectionTitle>Feedback</SectionTitle>
+            <motion.section ref={ref} id="feedback" className="max-w-[45rem] text-center leading-8 scroll-mt-28">
+                <SectionTitle>Customer's Feedback</SectionTitle>
+            </motion.section>
             <motion.div className="relative mt-4">
                 <AnimatePresence>
                     {onDisplay && <motion.div className="h-80"
@@ -72,7 +80,6 @@ export const Testimonial2 = () => {
                     </button>
                 </div>
             </motion.div>
-
         </>
     )
 }
