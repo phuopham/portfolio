@@ -4,8 +4,8 @@ import { SectionTitle } from "./ui/sectionTitle";
 import { TRUSTEDBY_DATA, TRUSTEDBY_POSITION, TRUSTEDBY_PROPERTYVARIANTS } from "../consts";
 
 export const TrustedBy = () => {
-    const [positionIndexes, setPositionIndexes] = useState([0, 1, 2, 3, 4, 5, 6]);
-
+    const [positionIndexes, setPositionIndexes] = useState([...Array(TRUSTEDBY_DATA.length).keys()]);
+    console.log(positionIndexes)
     const nextProperty = () => {
         setPositionIndexes((prevIndexes) => {
             const updatedIndexes = prevIndexes.map(

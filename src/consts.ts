@@ -54,7 +54,7 @@ export const TESTIMONIAL_DATA = [
     }
 ];
 
-export const TRUSTEDBY_POSITION = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5", "pos6"];
+export const TRUSTEDBY_POSITION = ["pos0", "pos1", "pos2", "pos3", "pos4", "pos5", "pos6", "pos7"];
 export const TRUSTEDBY_PROPERTYVARIANTS = {
     pos0: { x: "-16em", y: '-50%', zIndex: -2, opacity: '0', width: 0 },
     pos1: { x: "0", y: '-50%' },
@@ -63,6 +63,7 @@ export const TRUSTEDBY_PROPERTYVARIANTS = {
     pos4: { x: "48em", y: '-50%' },
     pos5: { x: "64em", y: '-50%', opacity: '0', width: 0 },
     pos6: { x: "64em", y: '-50%', opacity: '0', width: 0 },
+    pos7: { x: "64em", y: '-50%', opacity: '0', width: 0 },
 };
 export const TRUSTEDBY_DATA = [
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/Qualcomm-Logo.svg" },
@@ -71,5 +72,6 @@ export const TRUSTEDBY_DATA = [
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44 ', img: "./logo/viepos.png" },
     { style: 'dark:p-2 rounded-lg dark:bg-slate-50/75 w-44', img: "./logo/web888.png" },
     { style: 'dark:p-2 w-44 rounded-lg dark:bg-slate-50/75 ', img: "./logo/Dextermind.png" },
-    { style: 'dark:p-2 w-44 rounded-lg dark:bg-slate-50/75 ', img: "./logo/BTSserv.png" },
+    { style: 'dark:p-2 w-32 rounded-lg dark:bg-slate-50/75 ', img: "./logo/BTSserv.png" },
+    { style: 'dark:p-2 w-44 rounded-lg dark:bg-slate-50/75 ', img: "./logo/Axiom.png" }
 ];
