@@ -13,6 +13,17 @@
             "description": "It is my current job. I'm responsible for IT services and resources, train and share knowledge with staff, and roll out global IT projects to Vietnam."
         },
         {
+            "from": "Feb 2024 - now",
+            "company": "AXIOM technologies",
+            "title": "freelance IT engineer",
+            "description": "Cost me around 8hours/week. Mostly EUC and IE. My job is try my best to educate end-users and apply Devops mindset. My target on this: Reduce work-time on this by automation and reducing future open cases"
+        },
+        {
+            "from": "Nov 2022 - Feb 2023",
+            "title": "freelance Web developer",
+            "description": "My first job as freelance developer, part time though. My responsibility is custom Laravel ERP system base on customer's needs."
+        },
+        {
             "from": "Mar 2022",
             "company": "APTECH university",
             "title": "DISM certificate",
