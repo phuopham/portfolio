@@ -154,5 +154,22 @@
                 "./pictures/resume2.jpg"
             ]
         }
+    ],
+    "services": [
+        {
+            "title": "Network Technician/IT Support Speicialist",
+            "img": "./svg/networking-hierarchical-structure-svgrepo-com.svg",
+            "specialty": "I'm support setting up and maintaining network equipment like routers and switches, as well as managing meeting equipment, UPS and other IT systems"
+        },
+        {
+            "title": "Fullstack developer",
+            "img": "./svg/code-svgrepo-com.svg",
+            "specialty": "With a strong foundation in both front-end and back-end development, I am well-versed in numerous programming languages including JavaScript, SQL, and PHP/Laravel. I have hands-on experience in working with responsive designs and developing web applications"
+        },
+        {
+            "title": "L2 Customer Support Engineer",
+            "img": "./svg/customer-care-svgrepo-com.svg",
+            "specialty": "I'm providing Customer Support. With a strong background in troubleshooting, technical assistance, and customer service, I am ready to tackle any challenges that come my way."
+        }
     ]
 }
