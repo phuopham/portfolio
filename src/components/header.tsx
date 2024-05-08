@@ -12,6 +12,10 @@ const links = [
     hash: "#about",
   },
   {
+    name: "Offer",
+    hash: "#offer"
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
@@ -40,11 +44,11 @@ export const Header = () => {
 
   return (
     <header className="z-[999] relative w-[100vw]">
-      <nav className="fixed top-0 sm:left-1/2 w-[100vw] sm:-translate-x-1/2 py-2 sm:py-0 rounded-none border border-slate-50 border-opacity-40 bg-slate-50 bg-opacity-80 shadow-lg shadow-slate-900/[0.03] backdrop-blur-[0.5rem] sm:top-2 sm:rounded-full sm:w-fit dark:bg-gray-50 dark:border-slate-900/40 dark:bg-opacity-75 ">
+      <nav className="fixed top-0 md:left-1/2 w-[100vw] md:-translate-x-1/2 py-2 md:py-0 rounded-none border border-slate-50 border-opacity-40 bg-slate-50 bg-opacity-80 shadow-lg shadow-slate-900/[0.03] backdrop-blur-[0.5rem] md:top-2 md:rounded-full md:w-fit dark:bg-gray-50 dark:border-slate-900/40 dark:bg-opacity-75 ">
         <div className="text-center text-purple-600 font-bold">
           Phuong Pham
         </div>
-        <ul className="flex flex-wrap w-[100vw] items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5 gap-2 px-5 pb-1">
+        <ul className="flex flex-wrap w-[100vw] items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 md:w-[initial] md:flex-nowrap md:gap-5 gap-2 px-5 pb-1">
           {links.map((link) => (
             <motion.li
               className="flex items-center justify-center relative"
@@ -84,7 +88,7 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className="h-[6rem] sm:h-[7rem]"></div>
+      <div className="h-[6rem] md:h-[7rem]"></div>
     </header>
   );
 }

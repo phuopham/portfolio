@@ -3,7 +3,8 @@ import { motion } from "framer-motion";
 import { SectionTitle } from "./ui/sectionTitle";
 
 const skillsData = [
-  "HTML", "CSS", "Bootstrap4,5", "TailwindCSS", "Javascript", "Typescript", "React", "Next.JS", "Node.JS", "Prisma", "Redux", "Express.JS", "MySQL", "PHP", "Laravel7,8,10", "Java"
+  "CCNA", "AWS SAA", "Windows Server", "Service-now", "Sipass",
+  "HTML", "CSS", "Bootstrap4,5", "Javascript", "React", "Node.JS", "MySQL",
 ] as const
 
 const fadeInAnimationVariants = {

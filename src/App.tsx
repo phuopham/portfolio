@@ -13,8 +13,10 @@ import { Toaster } from "react-hot-toast"
 import { TrustedBy } from './components/trustedBy'
 import { Badges } from './components/badges'
 import { Testimonial2 } from './components/testimonial2'
+import Services from './components/services'
+import { ServiceProps } from './components/service'
 
-type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps> }
+type DataProps = { experiences: Array<ExperiencesProps>, projects: Array<ProjectsDataProps>, services: Array<ServiceProps> }
 
 const App = () => {
   const [data, setData] = useState<DataProps>()
@@ -37,6 +39,7 @@ const App = () => {
         <Intro />
         <TrustedBy />
         <About />
+        {data && <Services serviceData={data.services} />}
         <Badges baseVelocity={7}>
           <img loading="lazy" src="/badges/CCNA.png" alt="" />
           <img loading="lazy" src="/badges/devops-fundamentals.png" className='h-36' alt="" />
@@ -45,7 +48,7 @@ const App = () => {
         </Badges>
         {data && <Projects projectsData={data.projects} />}
         <Skills />
-        {data && <Experience experiences={data?.experiences} />}
+        {data && <Experience experiences={data.experiences} />}
         <Testimonial2 />
         <Contact />
       </main>
