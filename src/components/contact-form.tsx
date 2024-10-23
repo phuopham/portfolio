@@ -31,7 +31,7 @@ export const Contact = () => {
             const result = await response.json();
             // Handle the result from the API
             console.log(result);
-            toast.error("Form submitted successfully");
+            toast.success("Form submitted successfully");
         } catch (error) {
             // Handle the error from the API
             console.error(error);
