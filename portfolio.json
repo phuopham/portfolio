@@ -44,6 +44,37 @@
     ],
     "projects": [
         {
+            "title": "BTS-website - IT services",
+            "description": "a small tool to calculate possibility to find dream partner. ",
+            "tags": [
+                "Astro",
+                "Tailwind",
+                "ScrewFast"
+            ],
+            "link": "https://phuopham.github.io/webBTS/",
+            "repo": "https://github.com/phuopham/webBTS",
+            "images": [
+                "./pictures/webBTS1.jpg",
+                "./pictures/webBTS2.jpg"
+            ]
+        },
+        {
+            "title": "primaryE.com",
+            "description": "a small tool to calculate possibility to find dream partner. ",
+            "tags": [
+                "React",
+                "Tailwind",
+                "Radix-UI",
+                "Vite"
+            ],
+            "link": "https://primaryecom/",
+            "repo": "https://github.com/phuopham/vietnam_standard_calculator",
+            "images": [
+                "./pictures/primarye1.jpg",
+                "./pictures/primarye2.jpg"
+            ]
+        },
+        {
             "title": "Media converter",
             "description": "A secure, reliable tool to convert your data without uploading to any server or install any software.",
             "tags": [
@@ -118,40 +149,6 @@
             "images": [
                 "./pictures/viespa.jpg",
                 "./pictures/viespa2.jpg"
-            ]
-        },
-        {
-            "title": "My portfolio",
-            "description": "A website to showcase my skills, especially in front-end",
-            "tags": [
-                "React",
-                "Radix UI",
-                "Framer motion",
-                "Github Page",
-                "Pipedream",
-                "JSON"
-            ],
-            "link": "https://resume.phuopham.com",
-            "repo": "https://github.com/phuopham/resume",
-            "images": [
-                "./pictures/portfolio1.jpg",
-                "./pictures/portfolio2.jpg"
-            ]
-        },
-        {
-            "title": "My resume",
-            "description": "I would like to update and share my resume as fast as possible.",
-            "tags": [
-                "React",
-                "Vite",
-                "Github Page",
-                "JSON"
-            ],
-            "link": "https://resume.phuopham.com",
-            "repo": "https://github.com/phuopham/resume",
-            "images": [
-                "./pictures/resume1.jpg",
-                "./pictures/resume2.jpg"
             ]
         }
     ],
