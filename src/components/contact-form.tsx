@@ -28,22 +28,18 @@ export const Contact = () => {
                 },
                 body: JSON.stringify(data),
             });
-            const result = await response.json();
-            // Handle the result from the API
-            console.log(result);
+            // Clear the data state
+            setData({
+                Name: "",
+                Email: "",
+                Message: "",
+            });
             toast.success("Form submitted successfully");
         } catch (error) {
             // Handle the error from the API
             console.error(error);
             toast.error("Form submission failed");
         }
-
-        // Clear the data state
-        setData({
-            Name: "",
-            Email: "",
-            Message: "",
-        });
     };
     return (
         <motion.section
