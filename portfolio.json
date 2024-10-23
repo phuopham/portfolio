@@ -45,7 +45,7 @@
     "projects": [
         {
             "title": "BTS-website - IT services",
-            "description": "a small tool to calculate possibility to find dream partner. ",
+            "description": "my proposal to BTSserv.net",
             "tags": [
                 "Astro",
                 "Tailwind",
@@ -60,7 +60,7 @@
         },
         {
             "title": "primaryE.com",
-            "description": "a small tool to calculate possibility to find dream partner. ",
+            "description": "a small tool to calculate possibility to find dream partner in Vietnam. ",
             "tags": [
                 "React",
                 "Tailwind",
