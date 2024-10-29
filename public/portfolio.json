@@ -59,22 +59,6 @@
             ]
         },
         {
-            "title": "primaryE.com",
-            "description": "a small tool to calculate possibility to find dream partner in Vietnam. ",
-            "tags": [
-                "React",
-                "Tailwind",
-                "Radix-UI",
-                "Vite"
-            ],
-            "link": "https://primaryecom/",
-            "repo": "https://github.com/phuopham/vietnam_standard_calculator",
-            "images": [
-                "./pictures/primarye1.jpg",
-                "./pictures/primarye2.jpg"
-            ]
-        },
-        {
             "title": "Media converter",
             "description": "A secure, reliable tool to convert your data without uploading to any server or install any software.",
             "tags": [
@@ -89,6 +73,22 @@
             "images": [
                 "./pictures/media-converter1.jpg",
                 "./pictures/media-converter3.jpg"
+            ]
+        },
+        {
+            "title": "primaryE.com",
+            "description": "a small tool to calculate possibility to find dream partner in Vietnam. ",
+            "tags": [
+                "React",
+                "Tailwind",
+                "Radix-UI",
+                "Vite"
+            ],
+            "link": "https://primaryecom/",
+            "repo": "https://github.com/phuopham/vietnam_standard_calculator",
+            "images": [
+                "./pictures/primarye1.jpg",
+                "./pictures/primarye2.jpg"
             ]
         },
         {
@@ -107,21 +107,6 @@
             ]
         },
         {
-            "title": "Clarins cosmetic store",
-            "description": "I build the website in 1 month including admin site. Manage from stocking goods to invoices...",
-            "tags": [
-                "PHP",
-                "Bootstrap",
-                "MySql",
-                "AdminLTE"
-            ],
-            "repo": "https://github.com/phuopham/clarins-store",
-            "images": [
-                "./pictures/clarins2.jpg",
-                "./pictures/clarins3.jpg"
-            ]
-        },
-        {
             "title": "Amazing stores",
             "description": "A headless CRM system for multiple stores. Customer need a CRM system to centralize all of their stores website.",
             "tags": [
@@ -135,6 +120,21 @@
             "images": [
                 "./pictures/amazing-stores1.jpg",
                 "./pictures/amazing-stores2.jpg"
+            ]
+        },
+        {
+            "title": "Clarins cosmetic store",
+            "description": "I build the website in 1 month including admin site. Manage from stocking goods to invoices...",
+            "tags": [
+                "PHP",
+                "Bootstrap",
+                "MySql",
+                "AdminLTE"
+            ],
+            "repo": "https://github.com/phuopham/clarins-store",
+            "images": [
+                "./pictures/clarins2.jpg",
+                "./pictures/clarins3.jpg"
             ]
         },
         {
