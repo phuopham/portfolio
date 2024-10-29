@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { SectionTitle } from './ui/sectionTitle';
 
 export const Contact = () => {
-    const { ref } = useSectionInView("Experience", 0.5);
+    const { ref } = useSectionInView("Contact", 0.5);
     return (
         <motion.section
             id='contact' className='bg-purple-200 dark:bg-purple-950 w-full px-4 pb-14' ref={ref}>

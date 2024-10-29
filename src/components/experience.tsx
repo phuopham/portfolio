@@ -10,15 +10,13 @@ export type ExperiencesProps = {
 }
 
 export const Experience = ({ experiences }: { experiences: Array<ExperiencesProps> | undefined }) => {
-  const { ref } = useSectionInView("Experience", 0.5);
+  const { ref } = useSectionInView("Experience", 0.2);
+
   return (
     <motion.section
-      ref={ref}
-      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.75 }}
       id="experience"
+      ref={ref}
+      className="mt-28 max-w-[53rem] scroll-mt-28 text-center"
     >
       <SectionTitle>My experience</SectionTitle>
       <ol className="border-l-2 border-opacity-70 border-slate-300/75 dark:border-slate-500/75">

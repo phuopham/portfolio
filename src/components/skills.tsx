@@ -25,7 +25,7 @@ export const Skills = () => {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section
+    <motion.section
       id="skills"
       ref={ref}
       className="mt-28 max-w-[53rem] scroll-mt-28 text-center"
@@ -48,6 +48,6 @@ export const Skills = () => {
           </motion.li>
         ))}
       </ul>
-    </section>
+    </motion.section>
   );
 }
