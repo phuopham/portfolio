@@ -21,7 +21,7 @@ export const Contact = () => {
 
         // Use async/await and try/catch to send a post request to a RESTful API endpoint with the data as JSON
         try {
-            const response = await fetch("https://83adbdb4b5754c63c46f2ebe4058e654.m.pipedream.net", {
+            await fetch("https://83adbdb4b5754c63c46f2ebe4058e654.m.pipedream.net", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
