@@ -150,6 +150,18 @@
                 "./pictures/viespa.jpg",
                 "./pictures/viespa2.jpg"
             ]
+        },
+        {
+            "title": "Scava - Wordpress template",
+            "description": "freelance task to make stunning wordpress template",
+            "tags": [
+                "Wordpress"
+            ],
+            "link": "https://sacava.phukienairpods.com/home-4/",
+            "images": [
+                "./pictures/Scava1.png",
+                "./pictures/Scava2.png"
+            ]
         }
     ],
     "services": [
