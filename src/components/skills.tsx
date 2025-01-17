@@ -4,7 +4,7 @@ import { SectionTitle } from "./ui/sectionTitle";
 
 const skillsData = [
   "CCNA", "AWS SAA", "Windows Server", "Service-now", "Sipass",
-  "HTML", "CSS", "Bootstrap4,5", "Javascript", "React", "Node.JS", "MySQL",
+  "HTML", "CSS", "Bootstrap4,5", "Javascript", "React", "Node.JS", "MySQL", "PHP", "WordPress", "IT Service Management"
 ] as const
 
 const fadeInAnimationVariants = {

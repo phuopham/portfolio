@@ -41,10 +41,12 @@ const App = () => {
         <About />
         {data && <Services serviceData={data.services} />}
         <Badges baseVelocity={7}>
+          <img loading="lazy" src="/badges/ITIL.png" className='h-36' alt="" />
           <img loading="lazy" src="/badges/CCNA.png" alt="" />
           <img loading="lazy" src="/badges/devops-fundamentals.png" className='h-36' alt="" />
           <img loading="lazy" src="/badges/DISM.png" alt="" />
           <img loading="lazy" src="/badges/Siemens.png" className='h-36' alt="" />
+
         </Badges>
         {data && <Projects projectsData={data.projects} />}
         <Skills />
